@@ -10,6 +10,7 @@ LANG = "--lang=us"
 STOREFRONT_URL = "http://"+SERVER+"/"
 REGISTER_URL = "https://"+SERVER+"/index.php?route=account/register"
 SUCCESS_REGISTER_URL = "http://"+SERVER+"/index.php?route=account/success"
+SEARCH_RESULTS_URL = "http://"+SERVER+"/index.php?route=product/search&search="
 
 DELAY = "0.8"
 # Delay is usually used in Open Browser keyword or similar and sets the selenium speed. The purpose of delay is to make

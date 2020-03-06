@@ -6,8 +6,9 @@
 # Examples:
 # Library                         SeleniumLibrary
 # Library                         Keywords/MagicFunction.py
-Library                        	 SeleniumLibrary
+Library                        	  SeleniumLibrary
 Library                          String
+Library                          Collections
 Library                          Keywords/pricesStuff.py
 
 # Most used Robot Framework Libraries are:
@@ -22,6 +23,7 @@ Library                          Keywords/pricesStuff.py
 # Under variable section we should add all paths to the variables with information for forms and constants
 Variables                       Variables/GlobalVariables.py
 Variables                       Variables/Forms/RegisterPageVariables.py
+Variables                       Variables/Forms/ProductVariables.py
 
 # Locators
 # Under locators section we should add all paths for locators files
@@ -36,7 +38,7 @@ Variables                       Variables/Locators/GlobalLocators.py
 Resource                        Keywords/GlobalKeywords.robot
 Resource                        Keywords/RegisterUserKeywords.robot
 Resource                        Keywords/BasketKeywords.robot
-
+Resource                        Keywords/SearchEngineKeywords.robot
 
 
 # In case you didn't noticed when something starts with # it is a comment :)
