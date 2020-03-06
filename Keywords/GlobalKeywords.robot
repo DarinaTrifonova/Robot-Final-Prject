@@ -11,7 +11,7 @@ Open Chrome To Storefront
     Maximize Browser Window
     Set Selenium Speed    ${DELAY}
 
-# This keyword is used to run tests in headless browser
+# This keyword is used to run tests in headless Chrome browser
 Open Chrome To Headless
    ${chrome_options} =     Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
    ${prefs} =    Create Dictionary    download.default_directory=${EXECDIR}
@@ -24,8 +24,6 @@ Open Chrome To Headless
    ${options}=     Call Method     ${chrome_options}    to_capabilities
    Log  ${options}
    Open Browser    ${STOREFRONT_URL}   browser=chrome     desired_capabilities=${options}
-   ${SL}           get library instance    SeleniumLibrary
-   ${webdriver}    Call Method             ${SL}    _current_browser
    Set Window Size    1920    1080
    Set Selenium Speed    ${DELAY}
 
