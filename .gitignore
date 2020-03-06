@@ -1,2 +1,4 @@
 *.xml
 .idea/Robot-Final-Prject.iml
+*.pyc
+*.png
